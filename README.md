@@ -85,7 +85,8 @@ struct ChildView: View {
     <img width="259" alt="image" src="https://github.com/user-attachments/assets/c2eb28d3-29eb-40a8-a58d-f5aa951a9ad4">
 
 3. 再次按下子視圖的「增加」按鈕：
-     <img width="266" alt="image" src="https://github.com/user-attachments/assets/2a6afe4a-6576-4814-8245-588eb949fdce">
+   
+   <img width="266" alt="image" src="https://github.com/user-attachments/assets/2a6afe4a-6576-4814-8245-588eb949fdce">
 
 ---
 
