@@ -79,7 +79,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(items, id: \.self) { item in
-                    Text(item)
+                    //Text(item)
+
+                    //for Navigation Link
+                    NavigationLink(destination: DetailView(selectedItem: item)) {
+                        Text(item)
+                    }
                 }
                 .onDelete(perform: deleteItem) // 添加刪除功能
             }
@@ -95,6 +100,22 @@ struct ContentView: View {
         items.remove(atOffsets: offsets)
     }
 }
+
+struct DetailView: View {
+    // 顯示選中的水果名稱
+    var selectedItem: String
+
+    var body: some View {
+        VStack {
+            Text("您選擇了：")
+            Text(selectedItem)
+                .font(.largeTitle)
+                .padding()
+        }
+        .navigationTitle("詳細資訊")
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
