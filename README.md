@@ -30,7 +30,7 @@ struct ParentView: View {
                 .padding()
             ChildView(counter: $counter) // 傳遞 @Binding 給子視圖
                 .padding()
-        }
+        }.background(.red)
     }
 }
 ```
@@ -53,6 +53,7 @@ struct ChildView: View {
             }
             .padding()
         }
+        .background(.yellow)
     }
 }
 ```
@@ -76,25 +77,15 @@ struct ChildView: View {
 
 ### 主視圖與子視圖的互動
 1. 初始畫面：
-   ```
-   主視圖計數器：0
-   子視圖計數器：0
-   [增加按鈕]
-   ```
+  
+    <img width="249" alt="image" src="https://github.com/user-attachments/assets/e02637c1-aea6-48de-8c6b-fa2d0cd153a9">
 
 2. 按下子視圖的「增加」按鈕一次：
-   ```
-   主視圖計數器：1
-   子視圖計數器：1
-   [增加按鈕]
-   ```
 
-3. 再次按下子視圖的「增加」按鈕：
-   ```
-   主視圖計數器：2
-   子視圖計數器：2
-   [增加按鈕]
-   ```
+    <img width="259" alt="image" src="https://github.com/user-attachments/assets/c2eb28d3-29eb-40a8-a58d-f5aa951a9ad4">
+
+3. 再次按下子視圖的「增加」按鈕：    
+     <img width="266" alt="image" src="https://github.com/user-attachments/assets/2a6afe4a-6576-4814-8245-588eb949fdce">
 
 ---
 
